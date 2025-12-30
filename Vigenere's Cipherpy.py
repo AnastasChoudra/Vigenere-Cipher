@@ -2,6 +2,7 @@
 
 Improved implementation: unified function, preserves case, validates keyword, and includes basic examples/tests.
 """
+
 from itertools import cycle
 import string
 from typing import Iterable
@@ -67,9 +68,7 @@ def vigenere_decode(message: str, keyword: str) -> str:
 
 if __name__ == "__main__":
     # Example: decrypt a known ciphertext
-    vigenere_message = (
-        "txm srom vkda gl lzlgzr qpdb? fepb ejac! ubr imn tapludwy mhfbz cza ruxzal wg zztcgcexxch!"
-    )
+    vigenere_message = "txm srom vkda gl lzlgzr qpdb? fepb ejac! ubr imn tapludwy mhfbz cza ruxzal wg zztcgcexxch!"
     vigenere_keyword = "friends"
     print(vigenere_decode(vigenere_message, vigenere_keyword))
 
